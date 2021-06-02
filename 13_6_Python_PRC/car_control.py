@@ -28,10 +28,10 @@ def get():
             s.write("/goStraight/run -100 \n".encode())
         if k3=='C':
             print ("right")
-            s.write("/turn/run 100 -0.3 \n".encode())
+            s.write("/turn/run 170 -0.15 \n".encode())
         if k3=='D':
             print ("left")
-            s.write("/turn/run 100 0.3 \n".encode())
+            s.write("/turn/run 170 0.15 \n".encode())
         time.sleep(1)
         s.write("/stop/run \n".encode())
     elif k=='q':
